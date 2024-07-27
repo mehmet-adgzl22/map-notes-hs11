@@ -17,3 +17,5 @@
 https://map-notes-hs11.netlify.app/
 
 # map-notes-hs11-Proje Gifi
+![map-notes](https://github.com/user-attachments/assets/406aa027-9d6c-4bbb-91be-e963b292e913)
+
