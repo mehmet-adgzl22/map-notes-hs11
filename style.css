@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+}
+.sidebar {
+  background: rgba(53, 52, 52, 0.6);
+  height: 90vh;
+  margin-top: 80px;
+  color: #fff;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.sidebar h1 {
+  text-align: center;
+  background: rgba(53, 52, 52, 0.6);
+  border-radius: 10px;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.sidebar:hover {
+  background: rgba(53, 52, 52, 1);
+}
+
+
+
+
+form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .field input,
+select,
+form button {
+  border: none;
+  padding: 5px;
+  outline: none;
+  border-radius: 10px;
+}
+form button {
+  cursor: pointer;
+  background: black;
+  color: #fff;
+  font-weight: bold;
+  padding: 7px;
+}
+
+
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+  margin-top: 10px;
+  overflow: auto;
+  height: 100%;
+  padding-right: 10px;
+}
+ul::-webkit-scrollbar {
+  background: black;
+  border-radius: 10px;
+  width: 12.5px;
+}
+ul::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #575757;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+li div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li div p {
+  border-bottom: 1px solid rgba(148, 148, 148, 0.25);
+}
+li div p span {
+  font-weight: 900;
+}
+li #delete,
+li #fly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 3px;
+  font-size: 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+}
+li #delete {
+  top: 0;
+}
+li #delete:hover {
+  background-color: #414141;
+  color: red;
+}
+li #fly {
+  bottom: 0;
+  font-size: 13px;
+  padding: 5px;
+}
+li #fly:hover {
+  background-color: #414141;
+  color: red;
+}
+
+#map {
+  height: 100vh;
+}
